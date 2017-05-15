@@ -22,7 +22,7 @@ previous: networking
 
 К этому моменты вы уверенно можете отобразить любые компоненты в вашем мобильном приложении, будь это простой `View`, содержащий `Text` или `ScrollView` со списком Изображений (`Image`). Вместе эти компоненты составляют сцену (синоним для экрана) в вашем мобильном приложении.
 
-Сцена это ничто иное как компонент React, который обычно занимает всю площадь экрана. Сцена отличается от компонента `Text` или `Image` или даже пользовательского компонента `SpinningBeachball`, которые отображаются как часть экрана. Верятно что вы уже использовали сцены, даже не зная этого: компоненты ["HelloWorldApp"](docs/tutorial.html), the ["FlexDirectionBasics"](docs/flexbox.html) и ["ListViewBasics"](docs/using-a-listview.html), описанные ранее в уроке, все являются примерами сцен.
+Сцена это ничто иное, как компонент React, который обычно занимает всю площадь экрана. Сцена отличается от компонента `Text` или `Image` или даже пользовательского компонента `SpinningBeachball`, которые отображаются как часть экрана. Верятно что вы уже использовали сцены, даже не зная этого: компоненты ["HelloWorldApp"](docs/tutorial.html), the ["FlexDirectionBasics"](docs/flexbox.html) и ["ListViewBasics"](docs/using-a-listview.html), описанные ранее в уроке, все являются примерами сцен.
 
 Давайте создадим простую сцену, которая выводит на экран немного текста. Мы вернемся к ней позже, когда будем добавлять к нашему приложению навигацию. Создайте новый файл по имени "MyScene.js" со следующим содержимым:
 
@@ -100,7 +100,7 @@ navigator.push({
 navigator.pop();
 ```
 
-A more complete example that demonstrates the pushing and popping of routes. Edit your index*.js file to look something like this:
+Более полный пример, демонстрирующий работу с маршрутами. Измените ваш файл index*.j, чтобы он выглядел так:
 
 ```javascript
 import React, { Component } from 'react';
@@ -117,7 +117,7 @@ class SimpleNavigationApp extends Component {
           <MyScene
             title={route.title}
 
-            // Function to call when a new scene should be displayed           
+            // Функция, которая вызывается, когда мы хотим перейти к следующему экрану (сцене)
             onForward={ () => {    
               const nextIndex = route.index + 1;
               navigator.push({
@@ -126,7 +126,7 @@ class SimpleNavigationApp extends Component {
               });
             }}
 
-            // Function to call to go back to the previous scene
+            // Функция для перехода на предыдущий экран
             onBack={() => {
               if (route.index > 0) {
                 navigator.pop();
@@ -142,7 +142,7 @@ class SimpleNavigationApp extends Component {
 AppRegistry.registerComponent('SimpleNavigationApp', () => SimpleNavigationApp);
 ```
 
-And your MyScene.js to match this:
+Также измените файл MyScene.js как в коде ниже:
 
 ```javascript
 import React, { Component, PropTypes } from 'react';
