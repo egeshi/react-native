@@ -142,7 +142,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 
 Вторая строка добавит инструмент `android` в переменную пути, который пригодится на следующем шаге.
 
-> Если вы не станавливали Android SDK с помощью Android Studio, убедитесь что вы экспортируете правильный путь для `ANDROID_HOME`. Если вы устанавливали Android SDK с помощью Homebrew, он будет расположен по пути `/usr/local/opt/android-sdk`.
+> Если вы не устанавливали Android SDK с помощью Android Studio, убедитесь что вы экспортируете правильный путь для `ANDROID_HOME`. Если вы устанавливали Android SDK с помощью Homebrew, он будет расположен по пути `/usr/local/opt/android-sdk`.
 
 #### 4. Установите виртуальное устройство Android
 
