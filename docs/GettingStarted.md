@@ -53,7 +53,7 @@ block { display: none; }
 
 ## Не поддерживается
 
-<div>К сожалению Aplle позволяет производить разработку для iOS только на системах Mac. Если вы хотите разрабатывать мобильные приложения для iOS, но все еще не приобрели Mac, вы можете попробовать начать с инструкций для <a href="" onclick="display('platform', 'android')">Android</a>.</div>
+<div>К сожалению Apple позволяет производить разработку для iOS только на системах Mac. Если вы хотите разрабатывать мобильные приложения для iOS, но все еще не приобрели Mac, вы можете попробовать начать с инструкций для <a href="" onclick="display('platform', 'android')">Android</a>.</div>
 
 <center><img src="img/react-native-sorry-not-supported.png" width="150"></img></center>
 
